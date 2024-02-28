@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSC 635 Lab 6 - ROMAN CAMPBELL</title>
+<style>
+.color0 { background-color: #ff0000 } /* Red */
+.color1 { background-color: #ff2200 }
+.color2 { background-color: #ff4400 }
+.color3 { background-color: #ff6600 }
+.color4 { background-color: #ff8800 }
+.color5 { background-color: #ffaa00 }
+.color6 { background-color: #ffcc00 }
+.color7 { background-color: #ffee00 }
+.color8 { background-color: #ffff00 } /* Yellow */
+.color9 { background-color: #eeff00 }
+.color10 { background-color: #ddff00 }
+.color11 { background-color: #bbff00 }
+.color12 { background-color: #aaff00 }
+.color13 { background-color: #88ff00 }
+.color14 { background-color: #66ff00 }
+.color15 { background-color: #44ff00 }
+.color16 { background-color: #00ff00 } /* Lime */
+.color17 { background-color: #00ff22 }
+.color18 { background-color: #00ff44 }
+.color19 { background-color: #00ff66 }
+.color20 { background-color: #00ff88 }
+.color21 { background-color: #00ffaa }
+.color22 { background-color: #00ffcc }
+.color23 { background-color: #00ffee }
+.color24 { background-color: #00ffff } /* Aqua */
+.color25 { background-color: #00eeff }
+.color26 { background-color: #00ddff }
+.color27 { background-color: #00bbff }
+.color28 { background-color: #00aaff }
+.color29 { background-color: #0088ff }
+.color30 { background-color: #0066ff }
+.color31 { background-color: #0044ff }
+.color32 { background-color: #0000ff } /* Blue */
+.color33 { background-color: #2200ff }
+.color34 { background-color: #4400ff }
+.color35 { background-color: #6600ff }
+.color36 { background-color: #8800ff }
+.color37 { background-color: #aa00ff }
+.color38 { background-color: #cc00ff }
+.color39 { background-color: #ee00ff }
+.color40 { background-color: #ff00ff } /* Fuchsia */
+.color41 { background-color: #ff00ee }
+.color42 { background-color: #ff00dd }
+.color43 { background-color: #ff00bb }
+.color44 { background-color: #ff00aa }
+.color45 { background-color: #ff0088 }
+.color46 { background-color: #ff0066 }
+.color47 { background-color: #ff0044 }
+
+/* GRAY SCALE STARTS HERE */
+.color48 { background-color: #f0f0f0; }
+.color49 { background-color: #e6e6e6; }
+.color50 { background-color: #dcdcdc; }
+.color51 { background-color: #d3d3d3; }
+.color52 { background-color: #c9c9c9; }
+.color53 { background-color: #bfbfbf; }
+.color54 { background-color: #b6b6b6; }
+.color55 { background-color: #acacac; }
+.color56 { background-color: #a3a3a3; }
+.color57 { background-color: #999999; }
+.color58 { background-color: #8f8f8f; }
+.color59 { background-color: #858585; }
+.color60 { background-color: #7c7c7c; }
+.color61 { background-color: #727272; }
+.color62 { background-color: #686868; }
+.color63 { background-color: #5e5e5e; }
+
+</style>
+</head>
+<body>
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSC 635 Lab 6 - ROMAN CAMPBELL</title>
+<style>
+.color0 { background-color: #ff0000 } /* Red */
+.color1 { background-color: #ff2200 }
+.color2 { background-color: #ff4400 }
+.color3 { background-color: #ff6600 }
+.color4 { background-color: #ff8800 }
+.color5 { background-color: #ffaa00 }
+.color6 { background-color: #ffcc00 }
+.color7 { background-color: #ffee00 }
+.color8 { background-color: #ffff00 } /* Yellow */
+.color9 { background-color: #eeff00 }
+.color10 { background-color: #ddff00 }
+.color11 { background-color: #bbff00 }
+.color12 { background-color: #aaff00 }
+.color13 { background-color: #88ff00 }
+.color14 { background-color: #66ff00 }
+.color15 { background-color: #44ff00 }
+.color16 { background-color: #00ff00 } /* Lime */
+.color17 { background-color: #00ff22 }
+.color18 { background-color: #00ff44 }
+.color19 { background-color: #00ff66 }
+.color20 { background-color: #00ff88 }
+.color21 { background-color: #00ffaa }
+.color22 { background-color: #00ffcc }
+.color23 { background-color: #00ffee }
+.color24 { background-color: #00ffff } /* Aqua */
+.color25 { background-color: #00eeff }
+.color26 { background-color: #00ddff }
+.color27 { background-color: #00bbff }
+.color28 { background-color: #00aaff }
+.color29 { background-color: #0088ff }
+.color30 { background-color: #0066ff }
+.color31 { background-color: #0044ff }
+.color32 { background-color: #0000ff } /* Blue */
+.color33 { background-color: #2200ff }
+.color34 { background-color: #4400ff }
+.color35 { background-color: #6600ff }
+.color36 { background-color: #8800ff }
+.color37 { background-color: #aa00ff }
+.color38 { background-color: #cc00ff }
+.color39 { background-color: #ee00ff }
+.color40 { background-color: #ff00ff } /* Fuchsia */
+.color41 { background-color: #ff00ee }
+.color42 { background-color: #ff00dd }
+.color43 { background-color: #ff00bb }
+.color44 { background-color: #ff00aa }
+.color45 { background-color: #ff0088 }
+.color46 { background-color: #ff0066 }
+.color47 { background-color: #ff0044 }
+
+/* GRAY SCALE STARTS HERE */
+.color48 { background-color: #f0f0f0; }
+.color49 { background-color: #e6e6e6; }
+.color50 { background-color: #dcdcdc; }
+.color51 { background-color: #d3d3d3; }
+.color52 { background-color: #c9c9c9; }
+.color53 { background-color: #bfbfbf; }
+.color54 { background-color: #b6b6b6; }
+.color55 { background-color: #acacac; }
+.color56 { background-color: #a3a3a3; }
+.color57 { background-color: #999999; }
+.color58 { background-color: #8f8f8f; }
+.color59 { background-color: #858585; }
+.color60 { background-color: #7c7c7c; }
+.color61 { background-color: #727272; }
+.color62 { background-color: #686868; }
+.color63 { background-color: #5e5e5e; }
+
+</style>
+</head>
+<body>
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSC 635 Lab 6 - ROMAN CAMPBELL</title>
+<style>
+.color0 { background-color: #ff0000 } /* Red */
+.color1 { background-color: #ff2200 }
+.color2 { background-color: #ff4400 }
+.color3 { background-color: #ff6600 }
+.color4 { background-color: #ff8800 }
+.color5 { background-color: #ffaa00 }
+.color6 { background-color: #ffcc00 }
+.color7 { background-color: #ffee00 }
+.color8 { background-color: #ffff00 } /* Yellow */
+.color9 { background-color: #eeff00 }
+.color10 { background-color: #ddff00 }
+.color11 { background-color: #bbff00 }
+.color12 { background-color: #aaff00 }
+.color13 { background-color: #88ff00 }
+.color14 { background-color: #66ff00 }
+.color15 { background-color: #44ff00 }
+.color16 { background-color: #00ff00 } /* Lime */
+.color17 { background-color: #00ff22 }
+.color18 { background-color: #00ff44 }
+.color19 { background-color: #00ff66 }
+.color20 { background-color: #00ff88 }
+.color21 { background-color: #00ffaa }
+.color22 { background-color: #00ffcc }
+.color23 { background-color: #00ffee }
+.color24 { background-color: #00ffff } /* Aqua */
+.color25 { background-color: #00eeff }
+.color26 { background-color: #00ddff }
+.color27 { background-color: #00bbff }
+.color28 { background-color: #00aaff }
+.color29 { background-color: #0088ff }
+.color30 { background-color: #0066ff }
+.color31 { background-color: #0044ff }
+.color32 { background-color: #0000ff } /* Blue */
+.color33 { background-color: #2200ff }
+.color34 { background-color: #4400ff }
+.color35 { background-color: #6600ff }
+.color36 { background-color: #8800ff }
+.color37 { background-color: #aa00ff }
+.color38 { background-color: #cc00ff }
+.color39 { background-color: #ee00ff }
+.color40 { background-color: #ff00ff } /* Fuchsia */
+.color41 { background-color: #ff00ee }
+.color42 { background-color: #ff00dd }
+.color43 { background-color: #ff00bb }
+.color44 { background-color: #ff00aa }
+.color45 { background-color: #ff0088 }
+.color46 { background-color: #ff0066 }
+.color47 { background-color: #ff0044 }
+
+/* GRAY SCALE STARTS HERE */
+.color48 { background-color: #f0f0f0; }
+.color49 { background-color: #e6e6e6; }
+.color50 { background-color: #dcdcdc; }
+.color51 { background-color: #d3d3d3; }
+.color52 { background-color: #c9c9c9; }
+.color53 { background-color: #bfbfbf; }
+.color54 { background-color: #b6b6b6; }
+.color55 { background-color: #acacac; }
+.color56 { background-color: #a3a3a3; }
+.color57 { background-color: #999999; }
+.color58 { background-color: #8f8f8f; }
+.color59 { background-color: #858585; }
+.color60 { background-color: #7c7c7c; }
+.color61 { background-color: #727272; }
+.color62 { background-color: #686868; }
+.color63 { background-color: #5e5e5e; }
+
+</style>
+</head>
+<body>
+<table><thead><h3>Regular Table<tr><th>X</th><th>0</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th></tr><tr><th>0</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><th>1</th><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td></tr><tr><th>2</th><td>0</td><td>2</td><td>4</td><td>6</td><td>8</td><td>10</td><td>12</td><td>14</td><td>16</td><td>18</td><td>20</td></tr><tr><th>3</th><td>0</td><td>3</td><td>6</td><td>9</td><td>12</td><td>15</td><td>18</td><td>21</td><td>24</td><td>27</td><td>30</td></tr><tr><th>4</th><td>0</td><td>4</td><td>8</td><td>12</td><td>16</td><td>20</td><td>24</td><td>28</td><td>32</td><td>36</td><td>40</td></tr><tr><th>5</th><td>0</td><td>5</td><td>10</td><td>15</td><td>20</td><td>25</td><td>30</td><td>35</td><td>40</td><td>45</td><td>50</td></tr><tr><th>6</th><td>0</td><td>6</td><td>12</td><td>18</td><td>24</td><td>30</td><td>36</td><td>42</td><td>48</td><td>54</td><td>60</td></tr><tr><th>7</th><td>0</td><td>7</td><td>14</td><td>21</td><td>28</td><td>35</td><td>42</td><td>49</td><td>56</td><td>63</td><td>70</td></tr><tr><th>8</th><td>0</td><td>8</td><td>16</td><td>24</td><td>32</td><td>40</td><td>48</td><td>56</td><td>64</td><td>72</td><td>80</td></tr><tr><th>9</th><td>0</td><td>9</td><td>18</td><td>27</td><td>36</td><td>45</td><td>54</td><td>63</td><td>72</td><td>81</td><td>90</td></tr><tr><th>10</th><td>0</td><td>10</td><td>20</td><td>30</td><td>40</td><td>50</td><td>60</td><td>70</td><td>80</td><td>90</td><td>100</td></tr></thead></table><table><thead><h3>Grayscale Table<tr><th>X</th><th>0</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th></tr><tr><th>0</th><td class="color48">0</td><td class="color48">0</td><td class="color48">0</td><td class="color48">0</td><td class="color48">0</td><td class="color48">0</td><td class="color48">0</td><td class="color48">0</td><td class="color48">0</td><td class="color48">0</td><td class="color48">0</td></tr><tr><th>1</th><td class="color48">0</td><td class="color49">1</td><td class="color49">2</td><td class="color49">3</td><td class="color49">4</td><td class="color49">5</td><td class="color49">6</td><td class="color50">7</td><td class="color50">8</td><td class="color50">9</td><td class="color50">10</td></tr><tr><th>2</th><td class="color48">0</td><td class="color49">2</td><td class="color49">4</td><td class="color49">6</td><td class="color50">8</td><td class="color50">10</td><td class="color50">12</td><td class="color51">14</td><td class="color51">16</td><td class="color51">18</td><td class="color52">20</td></tr><tr><th>3</th><td class="color48">0</td><td class="color49">3</td><td class="color49">6</td><td class="color50">9</td><td class="color50">12</td><td class="color51">15</td><td class="color51">18</td><td class="color52">21</td><td class="color52">24</td><td class="color53">27</td><td class="color53">30</td></tr><tr><th>4</th><td class="color48">0</td><td class="color49">4</td><td class="color50">8</td><td class="color50">12</td><td class="color51">16</td><td class="color52">20</td><td class="color52">24</td><td class="color53">28</td><td class="color54">32</td><td class="color54">36</td><td class="color55">40</td></tr><tr><th>5</th><td class="color48">0</td><td class="color49">5</td><td class="color50">10</td><td class="color51">15</td><td class="color52">20</td><td class="color52">25</td><td class="color53">30</td><td class="color54">35</td><td class="color55">40</td><td class="color56">45</td><td class="color56">50</td></tr><tr><th>6</th><td class="color48">0</td><td class="color49">6</td><td class="color50">12</td><td class="color51">18</td><td class="color52">24</td><td class="color53">30</td><td class="color54">36</td><td class="color55">42</td><td class="color56">48</td><td class="color57">54</td><td class="color58">60</td></tr><tr><th>7</th><td class="color48">0</td><td class="color50">7</td><td class="color51">14</td><td class="color52">21</td><td class="color53">28</td><td class="color54">35</td><td class="color55">42</td><td class="color56">49</td><td class="color57">56</td><td class="color59">63</td><td class="color60">70</td></tr><tr><th>8</th><td class="color48">0</td><td class="color50">8</td><td class="color51">16</td><td class="color52">24</td><td class="color54">32</td><td class="color55">40</td><td class="color56">48</td><td class="color57">56</td><td class="color59">64</td><td class="color60">72</td><td class="color61">80</td></tr><tr><th>9</th><td class="color48">0</td><td class="color50">9</td><td class="color51">18</td><td class="color53">27</td><td class="color54">36</td><td class="color56">45</td><td class="color57">54</td><td class="color59">63</td><td class="color60">72</td><td class="color61">81</td><td class="color63">90</td></tr><tr><th>10</th><td class="color48">0</td><td class="color50">10</td><td class="color52">20</td><td class="color53">30</td><td class="color55">40</td><td class="color56">50</td><td class="color58">60</td><td class="color60">70</td><td class="color61">80</td><td class="color63">90</td><td class="color63">100</td></tr></thead></table><table><thead><h3>Rainbow Scale Table</h3><tr><th>X</th><th>0</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th></tr><tr><th>0</th><td class="color0">0</td><td class="color0">0</td><td class="color0">0</td><td class="color0">0</td><td class="color0">0</td><td class="color0">0</td><td class="color0">0</td><td class="color0">0</td><td class="color0">0</td><td class="color0">0</td><td class="color0">0</td></tr><tr><th>1</th><td class="color0">0</td><td class="color1">1</td><td class="color1">2</td><td class="color2">3</td><td class="color2">4</td><td class="color3">5</td><td class="color3">6</td><td class="color4">7</td><td class="color4">8</td><td class="color5">9</td><td class="color5">10</td></tr><tr><th>2</th><td class="color0">0</td><td class="color1">2</td><td class="color2">4</td><td class="color3">6</td><td class="color4">8</td><td class="color5">10</td><td class="color6">12</td><td class="color7">14</td><td class="color8">16</td><td class="color9">18</td><td class="color10">20</td></tr><tr><th>3</th><td class="color0">0</td><td class="color2">3</td><td class="color3">6</td><td class="color5">9</td><td class="color6">12</td><td class="color8">15</td><td class="color9">18</td><td class="color11">21</td><td class="color12">24</td><td class="color13">27</td><td class="color15">30</td></tr><tr><th>4</th><td class="color0">0</td><td class="color2">4</td><td class="color4">8</td><td class="color6">12</td><td class="color8">16</td><td class="color10">20</td><td class="color12">24</td><td class="color14">28</td><td class="color16">32</td><td class="color18">36</td><td class="color20">40</td></tr><tr><th>5</th><td class="color0">0</td><td class="color3">5</td><td class="color5">10</td><td class="color8">15</td><td class="color10">20</td><td class="color12">25</td><td class="color15">30</td><td class="color17">35</td><td class="color20">40</td><td class="color22">45</td><td class="color24">50</td></tr><tr><th>6</th><td class="color0">0</td><td class="color3">6</td><td class="color6">12</td><td class="color9">18</td><td class="color12">24</td><td class="color15">30</td><td class="color18">36</td><td class="color21">42</td><td class="color24">48</td><td class="color26">54</td><td class="color29">60</td></tr><tr><th>7</th><td class="color0">0</td><td class="color4">7</td><td class="color7">14</td><td class="color11">21</td><td class="color14">28</td><td class="color17">35</td><td class="color21">42</td><td class="color24">49</td><td class="color27">56</td><td class="color31">63</td><td class="color34">70</td></tr><tr><th>8</th><td class="color0">0</td><td class="color4">8</td><td class="color8">16</td><td class="color12">24</td><td class="color16">32</td><td class="color20">40</td><td class="color24">48</td><td class="color27">56</td><td class="color31">64</td><td class="color35">72</td><td class="color39">80</td></tr><tr><th>9</th><td class="color0">0</td><td class="color5">9</td><td class="color9">18</td><td class="color13">27</td><td class="color18">36</td><td class="color22">45</td><td class="color26">54</td><td class="color31">63</td><td class="color35">72</td><td class="color39">81</td><td class="color44">90</td></tr><tr><th>10</th><td class="color0">0</td><td class="color5">10</td><td class="color10">20</td><td class="color15">30</td><td class="color20">40</td><td class="color24">50</td><td class="color29">60</td><td class="color34">70</td><td class="color39">80</td><td class="color44">90</td><td class="color47">100</td></tr></thead></table>
+<footer>
+<a href="../css/stylesheets.css" target="_blank" alt="Stylesheets">Stylesheets.css</a>
+<a href="./Main.java" target="_blank" alt="Java sourcecode">Main.java</a>
+</footer>
+</body>
+</html>
